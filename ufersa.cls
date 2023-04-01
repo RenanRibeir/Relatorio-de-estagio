@@ -38,7 +38,7 @@
 
 % Header and footer
 
-\setlength\headheight{108pt}
+\setlength\headheight{140pt}
 \renewcommand{\headrulewidth}{0pt}
 
 \lhead{}
