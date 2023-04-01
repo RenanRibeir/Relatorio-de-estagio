@@ -327,6 +327,9 @@ INPUT ./assets/logo.png
 INPUT ./assets/logo.png
 INPUT assets/logo.png
 INPUT ./assets/logo.png
+INPUT ./assets/logo.png
+INPUT assets/logo.png
+INPUT ./assets/logo.png
 INPUT /home/renan/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro7t.tfm
 INPUT ./assets/logo.png
 INPUT assets/logo.png

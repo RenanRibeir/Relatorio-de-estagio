@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.19)  19 MAR 2023 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.19)  1 APR 2023 18:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -208,7 +208,7 @@ LaTeX Font Info:    ... okay on input line 3.
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
-* \headheight=108.0pt
+* \headheight=140.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -251,11 +251,11 @@ Package pdftex.def Info: assets/logo.png  used on input line 3.
 (pdftex.def)             Requested size: 71.13188pt x 109.4498pt.
 
 
-Package fancyhdr Warning: \headheight is too small (108.0pt): 
+Package fancyhdr Warning: \headheight is too small (140.0pt): 
 (fancyhdr)                Make it at least 151.54984pt, for example:
 (fancyhdr)                \setlength{\headheight}{151.54984pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-43.54984pt}.
+(fancyhdr)                \addtolength{\topmargin}{-11.54984pt}.
 
 [1{/home/renan/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}
 
@@ -276,118 +276,103 @@ Package pdftex.def Info: assets/logo.png  used on input line 3.
 (pdftex.def)             Requested size: 71.13188pt x 109.4498pt.
 
 
-Package fancyhdr Warning: \headheight is too small (108.0pt): 
+Package fancyhdr Warning: \headheight is too small (140.0pt): 
 (fancyhdr)                Make it at least 151.54984pt, for example:
 (fancyhdr)                \setlength{\headheight}{151.54984pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-43.54984pt}.
+(fancyhdr)                \addtolength{\topmargin}{-11.54984pt}.
 
 [2]
-Overfull \hbox (5.84683pt too wide) in paragraph at lines 6--12
-\OT1/phv/m/n/12 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
- []
-
-
-Overfull \hbox (30.4464pt too wide) in paragraph at lines 14--19
-[]\OT1/phv/m/n/12 O ambiente de desenvolvimento []e destinado []a plataforma mobile, As pr[]aticas e experiencias
- []
-
-
-Overfull \hbox (6.86104pt too wide) in paragraph at lines 14--19
-\OT1/phv/m/n/12 biblioteca React native, por[]em coexistindo com as linguagem php, com a biblioteca Laravel,
- []
-
-
-Overfull \hbox (5.84683pt too wide) in paragraph at lines 22--28
-\OT1/phv/m/n/12 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
- []
-
-
-Overfull \hbox (5.84683pt too wide) in paragraph at lines 30--36
-\OT1/phv/m/n/12 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
- []
-
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
-Package pdftex.def Info: assets/logo.png  used on input line 36.
+Package pdftex.def Info: assets/logo.png  used on input line 3.
 (pdftex.def)             Requested size: 71.13188pt x 109.4498pt.
 
-Package fancyhdr Warning: \headheight is too small (108.0pt): 
+
+Package fancyhdr Warning: \headheight is too small (140.0pt): 
 (fancyhdr)                Make it at least 151.54984pt, for example:
 (fancyhdr)                \setlength{\headheight}{151.54984pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-43.54984pt}.
+(fancyhdr)                \addtolength{\topmargin}{-11.54984pt}.
 
 [3]
-Overfull \hbox (5.84683pt too wide) in paragraph at lines 39--45
-\OT1/phv/m/n/12 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+Overfull \hbox (25.05617pt too wide) in paragraph at lines 6--9
+[]\OT1/phv/m/n/12 A organiza[][]ao []e a Bee Delivery uma empresa que liga entregadores de varias modalidades
  []
 
 
-Overfull \hbox (5.84683pt too wide) in paragraph at lines 47--53
-\OT1/phv/m/n/12 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+Overfull \hbox (29.11441pt too wide) in paragraph at lines 11--12
+[]\OT1/phv/m/n/12 O ambiente de desenvolvimento []e destinado []a plataforma mobile, as pr[]aticas e experi[]encias
  []
 
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
-Package pdftex.def Info: assets/logo.png  used on input line 53.
+Package pdftex.def Info: assets/logo.png  used on input line 22.
 (pdftex.def)             Requested size: 71.13188pt x 109.4498pt.
 
-Package fancyhdr Warning: \headheight is too small (108.0pt): 
+Package fancyhdr Warning: \headheight is too small (140.0pt): 
 (fancyhdr)                Make it at least 151.54984pt, for example:
 (fancyhdr)                \setlength{\headheight}{151.54984pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-43.54984pt}.
+(fancyhdr)                \addtolength{\topmargin}{-11.54984pt}.
 
 [4]
-Overfull \hbox (5.84683pt too wide) in paragraph at lines 55--61
-\OT1/phv/m/n/12 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
- []
-
-
-Overfull \hbox (5.84683pt too wide) in paragraph at lines 63--69
-\OT1/phv/m/n/12 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+Overfull \hbox (7.6446pt too wide) in paragraph at lines 27--28
+[][]\OT1/phv/m/n/12 E um uma estrutura de software de camadas semelhante as mais usadas em linguagem
  []
 
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
-Package pdftex.def Info: assets/logo.png  used on input line 70.
+Package pdftex.def Info: assets/logo.png  used on input line 39.
 (pdftex.def)             Requested size: 71.13188pt x 109.4498pt.
 
-Package fancyhdr Warning: \headheight is too small (108.0pt): 
+Package fancyhdr Warning: \headheight is too small (140.0pt): 
 (fancyhdr)                Make it at least 151.54984pt, for example:
 (fancyhdr)                \setlength{\headheight}{151.54984pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-43.54984pt}.
+(fancyhdr)                \addtolength{\topmargin}{-11.54984pt}.
 
 [5]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 70.
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
-Package pdftex.def Info: assets/logo.png  used on input line 70.
+Package pdftex.def Info: assets/logo.png  used on input line 39.
 (pdftex.def)             Requested size: 71.13188pt x 109.4498pt.
 
 
-Package fancyhdr Warning: \headheight is too small (108.0pt): 
+Package fancyhdr Warning: \headheight is too small (140.0pt): 
 (fancyhdr)                Make it at least 151.54984pt, for example:
 (fancyhdr)                \setlength{\headheight}{151.54984pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-43.54984pt}.
+(fancyhdr)                \addtolength{\topmargin}{-11.54984pt}.
 
-[6] (relatorio.aux) ) 
+[6]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 39.
+File: assets/logo.png Graphic file (type png)
+<use assets/logo.png>
+Package pdftex.def Info: assets/logo.png  used on input line 39.
+(pdftex.def)             Requested size: 71.13188pt x 109.4498pt.
+
+
+Package fancyhdr Warning: \headheight is too small (140.0pt): 
+(fancyhdr)                Make it at least 151.54984pt, for example:
+(fancyhdr)                \setlength{\headheight}{151.54984pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.54984pt}.
+
+[7] (relatorio.aux) ) 
 Here is how much of TeX's memory you used:
- 4241 strings out of 478269
- 70131 string characters out of 5839701
- 1858388 words of memory out of 5000000
- 24381 multiletter control sequences out of 15000+600000
+ 4246 strings out of 478269
+ 70209 string characters out of 5839701
+ 1860388 words of memory out of 5000000
+ 24386 multiletter control sequences out of 15000+600000
  525934 words of font info for 54 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 72i,14n,76p,315b,357s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,14n,76p,612b,357s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/home/renan/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/renan/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></home/renan/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></home/renan/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on relatorio.pdf (6 pages, 420219 bytes).
+Output written on relatorio.pdf (7 pages, 422743 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

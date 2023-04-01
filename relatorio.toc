@@ -1,11 +1,18 @@
 \babel@toc {brazilian}{}\relax 
-\contentsline {section}{\numberline {1}Descrição da Organização}{3}{}%
-\contentsline {section}{\numberline {2}Descrição do ambiente tecnológico}{3}{}%
-\contentsline {section}{\numberline {3}Relatório das atividades desenvolvidas pelo aluno}{3}{}%
-\contentsline {subsection}{\numberline {3.1}Estágio 1}{3}{}%
-\contentsline {subsection}{\numberline {3.2}Estágio 2}{4}{}%
-\contentsline {section}{\numberline {4}Reflexão por parte do aluno sobre as principais contribuições ao projeto}{4}{}%
-\contentsline {section}{\numberline {5}Relação dos principais conhecimentos obtidos nas disciplinas do curso e que foram de importância para o estágio}{4}{}%
-\contentsline {section}{\numberline {6}Reflexão sobre as dificuldades enfrentadas pelo estagiário na organização}{5}{}%
-\contentsline {section}{\numberline {7}Relação de tópicos que poderiam ser estudados no curso de Computação e que foram necessários no estágio.}{5}{}%
-\contentsline {section}{\numberline {8}Assinaturas}{6}{}%
+\contentsline {section}{\numberline {1}Descrição da Organização}{4}{}%
+\contentsline {section}{\numberline {2}Descrição do ambiente tecnológico}{4}{}%
+\contentsline {section}{\numberline {3}Relatório das atividades desenvolvidas pelo aluno}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Melhorias no código do aplicativo motoboy.}{4}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}React Native}{4}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Flux}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}React redux}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.4}Styled components}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.5}React query}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.6}Native base}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.7}MVVM}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.8}Conhecimentos adquiridos com outras equipes}{5}{}%
+\contentsline {section}{\numberline {4}Reflexão por parte do aluno sobre as principais contribuições ao projeto}{6}{}%
+\contentsline {section}{\numberline {5}Relação dos principais conhecimentos obtidos nas disciplinas do curso e que foram de importância para o estágio}{6}{}%
+\contentsline {section}{\numberline {6}Reflexão sobre as dificuldades enfrentadas pelo estagiário na organização}{6}{}%
+\contentsline {section}{\numberline {7}Relação de tópicos que poderiam ser estudados no curso de Computação e que foram necessários no estágio.}{6}{}%
+\contentsline {section}{\numberline {8}Assinaturas}{7}{}%

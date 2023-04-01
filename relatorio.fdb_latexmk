@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1679237067 "/home/renan/Área de Trabalho/modelo-latex-relatorio-estagio-ufersa-main/relatorio.tex" "relatorio.pdf" "relatorio" 1679237069 0
+["pdflatex"] 1680386172 "/home/renan/Área de Trabalho/modelo-latex-relatorio-estagio-ufersa-main/relatorio.tex" "relatorio.pdf" "relatorio" 1680386173 0
   "/home/renan/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1679236793 26361 9c0a121d088bfa25645f648ea692b684 ""
   "/home/renan/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1679236578 19997469 6a3837086133b37a0fe3fd6e748a79b5 ""
   "/home/renan/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc" 1679236615 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -55,13 +55,13 @@
   "/home/renan/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty" 1679236604 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
   "/home/renan/.miktex/texmfs/install/tex/latex/tocloft/tocloft.sty" 1679236605 37263 93f426e13c0c30a57da0f268ebb130e2 ""
   "/home/renan/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty" 1679236589 1618 6f0598aa81f9ba5cf5d393b4abd3e091 ""
-  "/home/renan/Área de Trabalho/modelo-latex-relatorio-estagio-ufersa-main/relatorio.tex" 1679237067 4146 30d9fa94ae1ec964932e3e03aade9721 ""
-  "assets/logo.png" 1607864986 527996 ac00ffba847a99bb117df30d9df849ad ""
-  "relatorio.aux" 1679237068 1547 163960a93cb3b20d3a340e32879ac161 "pdflatex"
-  "relatorio.tex" 1679237067 4146 30d9fa94ae1ec964932e3e03aade9721 ""
-  "relatorio.toc" 1679237068 1035 e7104d6cfcf4d05255b9e472c8a1ea0b "pdflatex"
-  "seus-dados.tex" 1607864986 616 61c49287c356fbb00de3615bd7246a08 ""
-  "ufersa.cls" 1607864986 2840 0aeb61c272cc68d92b32e7e58c6a045f ""
+  "/home/renan/Área de Trabalho/modelo-latex-relatorio-estagio-ufersa-main/relatorio.tex" 1680386074 2627 d010447599c117fbb9f0c2c7257a2972 ""
+  "assets/logo.png" 1679237748 527996 ac00ffba847a99bb117df30d9df849ad ""
+  "relatorio.aux" 1680386173 2374 c252f12393db91a9cfe7a35667cab730 "pdflatex"
+  "relatorio.tex" 1680386074 2627 d010447599c117fbb9f0c2c7257a2972 ""
+  "relatorio.toc" 1680386173 1575 630d7b8f44c5fcefc197459f8ac2b675 "pdflatex"
+  "seus-dados.tex" 1680385140 635 5fadacc68aea0fb52132de892a086d22 ""
+  "ufersa.cls" 1680385461 2840 1bb7ad44170203bbcd6b6a68153f27f1 ""
   (generated)
   "relatorio.aux"
   "relatorio.log"
