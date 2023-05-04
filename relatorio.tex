@@ -4,7 +4,7 @@
 
 \section{Introdução}
 
-O presente relatório está organizado da seguinte maneira: primeiramente, são explicados os ambientes tecnológicos que são estudados e trabalhados e depois o relatório divide-se em duas partes. Na Parte 1 está relatado o desenvolvimento de um aplicativo ao qual o estagiário participou do processo e este app está sendo utilizado atualmente, sendo possível baixá-lo diretamente das lojas virtuais (Google Store, Apple Store, entre outros) e na Parte 2 estão sendo detalhadas as atividades atuais, onde o estagiário está participando do desenvolvimento de (explicar melhor o que você está fazendo agora)
+O presente relatório está organizado da seguinte maneira: primeiramente, são explicados os ambientes tecnológicos que são estudados e trabalhados e depois o relatório divide-se em duas partes. Na Parte 1 está relatado o desenvolvimento do aplicativo Bee comerciais, aplicativo ao qual o estagiário foi desenvolvedor, atualmente o aplicativo já está concluído e sendo utilizado, sendo possível baixá-lo diretamente das lojas virtuais Google Store e Apple Store, nessa seção será abordado o processo de criação do aplicativo desde as fases de planejamento até a distribuição, detalhando os métodos utilizados assim como as tecnologias, na Parte 2 do relatório estão detalhadas as atividades atuais, onde o estagiário está participando do desenvolvimento de novas funcionalidades e manutenção do aplicativo Bee para entregadores, descrevendo as melhorias realizadas, tecnologias e arquiteturas de software utilizadas.  
 
 \section{Descrição da Organização}
 
@@ -56,6 +56,43 @@ Fonte: Hacker Way: Rethinking Web App Development at Facebook(2014)
 
 \subsection{React query}
 
+O React query é uma biblioteca que facilita o consumo de Api's, o uso clássico para integrações com Api é utilizar um cliente http com as configurações de segurança e dados do sistema que se deseja integrar, obedecendo ao protocolo http para buscar os dados desejados, algumas fases da parte front-end se repetem ao tratar essa comunicação, existe uma ação do usuário como o click de um botão e então, se inicia a comunicação com o servidor(inicia-se um processo na aplicação de comunicação HTTP), espera-se a resposta mostrando para o usuário que algo assíncrono ocorre para que ele aguarde(renderização de um ícone ou texto que remeta carregamento), e após o recebimento dos dados do servidor, mostrar os dados ao usuário, tratando e fazendo algumas validações e formatações, o fluxo é ilustrado na Figura \ref{fig:fluxoRequisicao}. 
+
+%figura 2 start
+\begin{figure}[!h]
+\centering 
+\caption{FLUXO DE UMA REQUISIÇÃO A PARTIR DE AÇÃO DO USUÁRIO }
+\includegraphics[width=16cm]{assets/Fluxo de requisição.png} 
+{\footnotesize Fonte: Autoria própria (2023)}
+\label{fig:fluxoRequisicao}
+\end{figure}
+
+%figura 2 end
+
+O React query traz ferramentas genéricas prontas para facilitar o código desse processo, ele é um hook React, que implementa o tratamento desses estados de forma, no exemplo da figura \ref{fig:tratamentoDeEstados} possuímos um código extenso que em muitos projetos se repete em vários arquivos, já na figura \ref{fig:estadosComReactQuery} o exemplo do uso da biblioteca, é interessante focar na redução de complexidade para compreensão do código e na diminuição de linhas para o mesmo resultado.
+
+\begin{figure}[!h]
+\centering 
+\caption{CÓDIGO PARA TRATAMENTO DOS ESTADOS}
+\includegraphics[width=12cm]{assets/tratamentoDeEstados.png} 
+{\footnotesize 
+
+Fonte: https://blog.codeminer42.com/fetch-data-in-an-effective-way-with-react-query/}
+\label{fig:tratamentoDeEstados}
+\end{figure}
+
+\begin{figure}[!h]
+\centering 
+\caption{UTILIZAÇÃO DO REACT QUERY PARA TRATAR ESTADOS E DADOS}
+\includegraphics[width=15cm]{assets/estadosComReactQuery.png} 
+{\footnotesize 
+
+Fonte: https://blog.codeminer42.com/fetch-data-in-an-effective-way-with-react-query/}
+\label{fig:estadosComReactQuery}
+\end{figure}
+
+A biblioteca recebe a requisição a ser feita, e a configuração da instância do dado, outra funcionalidade é o acesso global dos dados recebido no cache gerenciado na biblioteca, um dos problemas do React é compartilhar estados entre componentes, a biblioteca se mostra muito útil, pois facilita o tratamento de requisições de dados e os armazena, tendo isso em vista cada entidade dentro da aplicação é uma instância de hook react query, melhorando a organização. Outra vantagem é evitar requisições desnecessárias, que são um custo de infraestrutura. existe uma configuração em que é determinado o tempo que um dado fica obsoleto ou não, a partir dessa funcionalidade é possível implementar logicas em que um dado sempre esteja atual conforme a necessidade do usuário, porém com um custo menor.
+
 \subsection{Typescript}
 É uma ferramenta javascript que ajuda na identificação de erros na fase de desenvolvimento, pois,  adiciona tipagem a linguagem javascript, tornando a linguagem mais escalável e o código mais simples de ser entendido. O typescript é uma dependência javascript que não altera o funcionamento final de uma aplicação diretamente, é apenas uma ferramenta em tempo de desenvolvimento. Nas Figura \ref{fig:TypescritXJavascript}  que se encontra abaixo podemos ver um claro exemplo da diferença entre javascript puro e typescript, na figura da esquerda é instanciado a constante userJS que possui nome e senha, o javascript entende os tipos do objeto quando instanciado, porém, ao tentar acessar um campo inexistente, não existe aviso algum, o javascript entende que o campo pode ter sido adicionado ao objeto, na figura da direita um exemplo do que aconteceria no mesmo cenário utilizando typescript, ao acessar um campo inexistente a IDE com suporte, mostra um erro em tempo de desenvolvimento, com uma descrição clara do porquê existe um problema. 
 
@@ -105,20 +142,7 @@ o segundo passo foi a interação com o desenvolvedor responsável pela criaçã
 
 
 \subsection{Conclusão do desenvolvimento}
-Com a documentação dos endpoints em mão foi iniciado o trabalho de integração do front-end com os dados reais do sistema, os mocks tornaram o processo mais rápido tendo em vista que os dados no código estavam centralizados em uma variável, a biblioteca utilizada para integração foi o React Query, uma biblioteca de gerenciamento de estado assíncrono, o uso dessa ferramenta na empresa era inicial, onde os desenvolvedores realizam estudos da biblioteca, utilizam em projetos paralelos ao código para averiguar se atende a demanda de produtividade, desempenho e qualidade necessária para o projeto dos aplicativos, o react query facilita um trabalho que muitos desenvolvedores codificam na mão, e posibilita de forma descentralizada, a integração entre o front-end e back-end, o uso classico para essa integração é utilizar um cliente http, no caso o axios, obedecendo ao protocolo http para buscar dados no sistema, existem algumas funcionalidades que se repetem ao tratar essa comunicação, se inicia a comunicação com o servidor, espera-se a resposta mostrando para o usuário que algo assíncrono ocorre para que ele aguarde, e após o recebimento dos dados do servidor, mostrar os dados ao usuário, tratando e fazendo algumas validações e formatações como ilustra a Figura \ref{fig:fluxoRequisicao}. 
-
-%figura 2 start
-\begin{figure}[!h]
-\centering 
-\caption{FLUXO DE UMA REQUISIÇÃO A PARTIR DE AÇÃO DO USUÁRIO }
-\includegraphics[width=16cm]{assets/Fluxo de requisição.png} 
-{\footnotesize Fonte: Autoria própria (2023)}
-\label{fig:fluxoRequisicao}
-\end{figure}
-
-%figura 2 end
-
-O react query traz ferramentas genéricas prontas para facilitar o código desse processo, ele é um hook React, que recebe a requisição a ser feita, e a configuração da instância do dado recebido para acessarmos globalmente do cache um dos problemas do React é compartilhar estados entre componentes a biblioteca se mostra muito útil, pois facilita o tratamento de requisições de dados e os armazena, tendo isso em vista cada entidade dentro da aplicação é uma instância de hook react query, na aplicação trabalhada, existiam 3 camadas a de lógica interna do aplicativo, os dados externos e as definições visuais, como o escopo era reduzido, somente 2 camadas foram necessárias, uma visual a View, que carregava também a pouca lógica necessária para validações visuais,e a camada de dados a Model, que era a camada com a integração de dados da api e a manipulação dos mesmos para serem renderizados em tela.
+Com a documentação dos endpoints em mão foi iniciado o trabalho de integração do front-end com os dados reais do sistema, os mocks tornaram o processo mais rápido tendo em vista que os dados no código estavam centralizados em uma variável, a biblioteca utilizada para integração foi o React Query, uma biblioteca de gerenciamento de estado assíncrono, o uso dessa ferramenta na empresa era inicial, onde os desenvolvedores realizam estudos da biblioteca, utilizam em projetos paralelos ao código para averiguar se atende a demanda de produtividade, desempenho e qualidade necessária para o projeto dos aplicativos, na aplicação trabalhada, existiam 3 camadas a de lógica interna do aplicativo, os dados externos e as definições visuais, como o escopo era reduzido, somente 2 camadas foram necessárias, uma visual a View, que carregava também a pouca lógica necessária para validações visuais,e a camada de dados a Model, que era a camada com a integração de dados da api e a manipulação dos mesmos para serem renderizados em tela.
 
 %figura 3 start
 \begin{figure}[h]
