@@ -25,30 +25,46 @@
 \doublespacing
 \renewcommand{\familydefault}{\sfdefault}
 \pagestyle{fancy}
-\geometry{margin=1in, bottom=2.5in}
+\geometry{margin=1in, bottom=1in}
 \AtBeginDocument {\capa\conteudo}
 \AtEndDocument {\assinaturas}
 
 % Sections
 
 \titleformat{\section}
-  {\normalfont\bfseries}{\thesection.}{1em}{}[{\titlerule[0.8pt]}]
+  {\normalfont\bfseries}{\thesection.}{1em}{}
+  %[{\titlerule[0.8pt]}]
 \titleformat{\subsection}
   {\normalfont\bfseries}{\thesubsection}{1em}{}
+ % [{\titlerule[0.8pt]}]
 
 % Header and footer
-
-\setlength\headheight{140pt}
 \renewcommand{\headrulewidth}{0pt}
-
+    
 \lhead{}
 \chead{%
-  \includegraphics[width=2.5cm]{assets/logo}\\%
-  \textbf{\footnotesize UNIVERSIDADE FEDERAL RURAL DO SEMI-ÁRIDO (UFERSA) – Mossoró}\\%
-  \footnotesize Departamento de Computação (DC)\\%
-  Estágio Supervisionado em Ciência da Computação%
 }
 \rhead{}
+
+\fancypagestyle{firstpage}{%
+
+    \lhead{}
+    \chead{%
+        \setlength\headheight{140pt}
+        \renewcommand{\headrulewidth}{0pt}
+      \includegraphics[width=2.5cm]{assets/logo}\\%
+      \textbf{\footnotesize UNIVERSIDADE FEDERAL RURAL DO SEMI-ÁRIDO (UFERSA) – Mossoró}\\%
+      \footnotesize Departamento de Computação (DC)\\%
+      Estágio Supervisionado em Ciência da Computação%
+    }
+    \rhead{}
+}
+
+\fancypagestyle{coverstyle}{%
+    \lhead{}
+    \chead{}
+    \rhead{}
+}
 
 \lfoot{}
 \rfoot{\thepage}
@@ -107,7 +123,7 @@
 \textbf{Empresa:} \empresa\\%
 \textbf{Período de estágio:} \periodo\\%
 \end{flushright}%
-\vspace{1cm}%
+\vspace{4cm}%
 \begin{center}%
 \footnotesize%
 \ifdef{\relatorioFinal}
@@ -117,5 +133,5 @@
 \footnotesize%
 \textbf{APROVADO [\quad] \hspace{1.5cm} REPROVADO [\quad] \hspace{1.5cm} AJUSTES [\quad]}%
 \end{center}%
-\thispagestyle{coverstyle}%
+\thispagestyle{firstpage}%
 \newpage}
