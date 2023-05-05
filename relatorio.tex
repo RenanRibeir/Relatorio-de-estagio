@@ -96,7 +96,6 @@ A biblioteca recebe a requisição a ser feita, e a configuração da instância
 \subsection{Typescript}
 É uma ferramenta javascript que ajuda na identificação de erros na fase de desenvolvimento, pois,  adiciona tipagem a linguagem javascript, tornando a linguagem mais escalável e o código mais simples de ser entendido. O typescript é uma dependência javascript que não altera o funcionamento final de uma aplicação diretamente, é apenas uma ferramenta em tempo de desenvolvimento. Nas Figura \ref{fig:TypescritXJavascript}  que se encontra abaixo podemos ver um claro exemplo da diferença entre javascript puro e typescript, na figura da esquerda é instanciado a constante userJS que possui nome e senha, o javascript entende os tipos do objeto quando instanciado, porém, ao tentar acessar um campo inexistente, não existe aviso algum, o javascript entende que o campo pode ter sido adicionado ao objeto, na figura da direita um exemplo do que aconteceria no mesmo cenário utilizando typescript, ao acessar um campo inexistente a IDE com suporte, mostra um erro em tempo de desenvolvimento, com uma descrição clara do porquê existe um problema. 
 
-%figura 2 start
 \begin{figure}[h]
 \centering
 \caption{Exemplo em codigo diferença Typescript e Javascript}
@@ -105,6 +104,7 @@ A biblioteca recebe a requisição a ser feita, e a configuração da instância
 {\footnotesize Fonte: Autoria própria (2023)}
 \label{fig:TypescritXJavascript}
 \end{figure}
+
 Existem mais usos importantes da linguagem, que tornam um projeto muito mais escalável e fácil de ser compreendido, no caso de integrações com softwares via http, não se tem conhecimento se não documentado dos campos de um objeto, o typescript, ajuda a documentar quais atributos do objeto recebido podem ser acessados, e evita erros de escrita que não seriam percebidos até um erro na aplicação já em runtime, perceber os erros em desenvolvimento, acelera e torna mais dinâmica a criação de funcionalidades em um aplicativo, agregando assim valor ao software final.
 
 \subsection{Styled components}
@@ -116,7 +116,16 @@ Styled components é uma biblioteca javascript que auxilia na criação de estil
 É uma biblioteca de componentes visuais genéricos e de fácil edição react native que auxilia no desenvolvimento de interfaces, a biblioteca utiliza o conceito de programação declarativa "tem seu foco em descrever o resultado desejado e como ele deve se parecer, ao invés de listar todos os passos de execução até se obter este resultado."(Nicholas Segger,2021), no conceito UI declarativa os estilos de um componente do react native tradicional, os estilos são definidos caso a caso, e não são vinculados a um componente específico, geralmente existe um arquivo só para a declaração desses estilos, em grandes aplicações, desenvolvidas por equipes, é comum a criação de um código que já existe, o que torna a aplicação mais carregada. na UI declarativa as estilizações descritos na sua instância, que diminui código e evita redundância acidental de código.  
 
 \subsection{MVVM}
- É um padrão de design um pouco mais semelhante aos tradicionais do que o flux, o princípio do padrão é separar a lógica do que e interface do usuário
+O MVVM (Model-View-ViewModel) é um padrão de design de arquitetura de interface do usuário para desacoplamento da interface do usuário e de código que não é da interface do usuário(Learn Microsoft,2023), É um padrão de design um pouco mais semelhante aos tradicionais do que o flux, ele divide responsabilidades em camadas, a camada de model lida com o modelo e os dados da aplicação, a camada de view com a organização  dos componentes visuais, e na view-model as lógicas internas, e a  maipulação dos dados da model para a exibibção na camada de vive. A fiigura abaixo ilusta o fluxo de comunicação entre as camadas.
+\begin{figure}[!h]
+\centering
+\caption{Exemplo em codigo diferença Typescript e Javascript}
+\includegraphics[width=10cm]{assets/mvvm.png} 
+{\footnotesize
+
+Fonte: https://learn.microsoft.com/en-us/previous-versions/msp-n-p/hh848246(v=pandp.10)?redirectedfrom=MSDN}
+\label{fig:mvvm}
+\end{figure}
 
 \section{ Bee comerciais - Desenvolvimento de aplicativo para uso interno}
 O setor comercial na empresa Bee delivery é o responsável pelo relacionamento entre os clientes da bee delivery e a empresa, nessas atividades existe a demanda de gerenciar os dados de captação de clientes, agendamento de visitas entre outros, o aplicativo dos comerciais foi pensado para complementar o sistema já existente que possuía algumas funcionalidades das citadas anteriormente, já que foi relatado uma certa dificuldade de usabilidade da aplicação web, tendo em vista que os usuários na maioria do tempo utilizavam por dispositivos moveis. 
@@ -167,11 +176,20 @@ Um dos requisitos de sistema era realizar a checagem da posição do usuário, a
 Ao terminar o desenvolvimento foi implementado um fluxo de distribuição para a aplicação, é normal para as empresas implementarem esse fluxo, apesar de ser possível criar um pacote localmente na própria maquina usada para o desenvolvimento, o processo é passível de falhas, um fluxo de distribuição e integração implementa um protocolo que dificulta erros, a ferramenta utilizada foi o appcenter da microsoft já instalado na aplicação, o fluxo manual após a equipe concluir uma certa quantidade de demandas, por meio de um gerenciador de versão de código é realizada uma mescla dessas demandas em uma ramificação que contem as funcionalidades necessárias para uma nova versão da aplicação, com versão e configuração de arquivos atualizada, com essa versão é compilado para um pacote compatível com a app store ou apple store, e feito o upload manualmente nos serviços das mesmas. No fluxo automatizado, ao concluir e mesclar as versões utilizando um gerenciador de versão de código, o app center escuta essa alteração e configura as atualizações necessárias de versão, cria um pacote para as lojas e os pública, existe uma otimização no tempo dos desenvolvedores e um ganho de tempo e qualidade das aplicações.  a figura X abaixo ilustra o processo de desenvolvimento contínuo.
 \section{Bee para entregadores - Melhorias no código do aplicativo motoboy.}
 
-O aplicativo dos motoboys da bee delivery Bee delivery para Entregadores, disponível na Playstore com mais de 1 milhão de downloads é o objeto de trabalho a ser explorado neste tópico, utiliza a tecnologia React native e é por onde os motoboys recebem as demandas de entregas, esses chamados acontecem em tempo real utilizando o serviço Firebase Cloud Messaging utilizado para todas as atualizações onde o cliente(usuário entregador) seja um ator passivo, um dos fluxos que pode exemplificar é uma empresa chama motoboys e estes recebem em seu celular uma mensagem do sistema com as informações da entrega, o motoboy pode aceitar ou recusar a entrega informando para o sistema por meio de requisições http comuns, 
+O aplicativo dos motoboys da bee delivery(Bee delivery para Entregadores), disponível na Playstore com mais de 1 milhão de downloads é o objeto de trabalho a ser explorado neste tópico, utiliza a tecnologia React native e éa aplicação por qual os motoboys recebem as demandas de entregas, por meio de chamados enviados em tempo real utilizando o serviço Firebase Cloud Messaging que é um serviço fornecido pela empresa Google esse mesmo serviço é utilizado para todas as atualizações onde o cliente(usuário entregador) seja um ator passivo, um dos fluxos que pode exemplificar é uma empresa chama motoboys e estes recebem em seu celular uma mensagem do sistema com as informações da entrega, o motoboy pode aceitar ou recusar a entrega informando para o sistema por meio de requisições http comuns,
+
 \subsection{Ambiente tecnológico inicial}
-\subsection{Melhorias no ciclo de distribuição da aplicação.}
+
+Inicialmente o código do aplicativo utilizava somente a biblioteca React redux e a arquitetura Flux, existiam alguns problemas na organização das lógicas de tratamento dos dados responsável por como os dados recebidos do sistema são modificados para as funcionalidades e visualização e também na separação das entidades de dados, o que se justifica dado o tamanho da aplicação e o fluxo de entrega de novas funcionalidades. Por meio de estudos, a equipe dos desenvolvedores responsável na aplicação percebeu que o uso de algumas outras bibliotecas poderiam simplificar algumas lógicas a fim de tornar a aplicação mais enxuta, outra medida a ser tomada era a refatoração de alguns trechos de código com objetivo otimizar o desempenho, reduzir a verbosidade e identificar melhorias nos fluxos já existentes.
+
 \subsection{Redução de requisições}
-\subsection{Conhecimentos adquiridos com outras equipes}
+
+
+
+\subsection{Beneficio da comunicação com outras equipes}
+
+\subsection{Melhorias no ciclo de distribuição da aplicação.}
+
 \subsection{Resultados finais}
 
 Todas as tecnologias citadas acima são utilizadas hoje no projeto em que vivencio, existe um processo de migração da estrutura antiga com flux e redux, para uma nova estrutura que utiliza react query, native base e mvvm.
@@ -194,23 +212,20 @@ As disciplinas de sistemas operacionais e arquitetura de computadores fornece as
 Engenharia de software, gestão de projetos e elicitação de requisitos contribui para o profissional no mercado de trabalho, em termos de organização de software, nota-se uma grande negligência com a parte de documentação, e toda parte inicial do processo de engenharia, um bom profissional entende o porquê dessa negligência e tenta adaptar novos processos, entender o que já funciona e o que pode melhorar, além de entender as metodologias ágeis, O State of Scrum 2017-2018 ao fazer o levantamento apontou que 83\% das empresas utilizam scrum de forma hibrida com alguma outra metodologia, dominar essas metodologias é indispensavel para o profissional da área.
 
 \section{Reflexão sobre as dificuldades enfrentadas pelo estagiário na organização}
-  Inicialmente o maior impacto foi a falta de referência para a programação em react native,  o aluno de computação aprende várias linguagens diferentes, porém poucas disciplinas, utilizam o javascript ou outra linguagem mais voltada a web, em sua maioria as linguagens mais utilizadas foram c++ e java, os conhecimentos adquiridos para passar no teste técnico da empresa foram adquiridos estudando por conta própria, com a criação de aplicativos e cursos online,  com os conhecimentos de programação básica e POO a dificuldade estava na diferença de paradigma e como a comunidade React utiliza o javascript mais moderno, foi difícil adaptar os conceitos de escalabilidade aprendidos em POO, nos projetos, e também difícil entender a arquitetura flux. 
+
+Inicialmente o maior impacto foi a falta de referência para a programação em react native,  o aluno de computação aprende várias linguagens diferentes, porém poucas disciplinas, utilizam o javascript ou outra linguagem mais voltada a web, em sua maioria as linguagens mais utilizadas foram c++ e java, os conhecimentos adquiridos para passar no teste técnico da empresa foram adquiridos estudando por conta própria, com a criação de aplicativos e cursos online,  com os conhecimentos de programação básica e POO a dificuldade estava na diferença de paradigma e como a comunidade React utiliza o javascript mais moderno, foi difícil adaptar os conceitos de escalabilidade aprendidos em POO, nos projetos, e também difícil entender a arquitetura flux. 
 
 Um código de uma aplicação que é um produto de startup, em que uma equipe desenvolve, foi um tanto desafiador no sentido de entender os padrões internos utilizados, os artigos da comunidade muitas vezes são superficiais, no nível avançado, raramente se encontra um material de qualidade sobre aplicações escaláveis, ao contrário do java com muita coisa definida que funciona, o react ainda está amadurecendo, e muita coisa ainda está sendo desenvolvida, isso é um grande desafio também para os desenvolvedores.
 
 Existiu também uma dificuldade de saber onde a teoria se aplicava na prática, as disciplinas isoladas não deixavam claras onde cada conhecimento é utilizado por uma empresa, o que um software utiliza em cada nicho, os conceitos de uma arquitetura monólito, banco de dados e outros, não tinham destino antes de uma grande preparação para o mercado de trabalho, o estudante de computação é um profissional muito versátil para o mercado de trabalho por ter conhecimento em quase todas as áreas do software, porém faltam mais exemplos reais, para direcionar os esforços de estudos para o aplicável na sociedade.   
 
 \section{Relação de tópicos que poderiam ser estudados no curso de Computação e que foram necessários no estágio.}
-ESCREVER.
 
-tópicos sobre protocolo http
+Um assunto interessante e atual seriam disciplinas de programação web, com do básico de uma linguagem utilizada atualmente avançando até o uso de uma framework, é de suma importância para um cientista da computação, um exemplo de como aplicar padrões de projeto, análise de algorítimos, testes entre outros assuntos envolvidos no assunto, nas tecnologias atuais, como profissional da área no React native pode se perceber que a comunidade, não envolve esses conhecimentos nos conteúdos mais populares, porém, nota-se que os desenvolvedores mais avançados dominam TDD(Desenvolvimento orientado a testes), padrões de design de código, código limpo e desempenho, para os alunos um bom aproveitamento de uma disciplina com esses assuntos resultaria em um grande destaque no mercado de trabalho. 
 
-criação de software seguro
+Outro tópico seria a distribuição de software, muitas aplicações necessitam de um caminho até o usuário, e existem ferramentas utilizadas para esse fim, é importante saber configurar e entender o funcionamento dessas ferramentas, estas como AWS(Amazon Web Services, Inc.) para aplicações Web por exemplo.
 
-programação web aprofundada com o uso de frameworks
-
-empreendedorismo voltado a computação
-
+Empreendedorismo com foco em desenvolvimento de software, para melhor aproveitamento da disciplina já existente na grade curricular, é interessante que o aluno possa entender estrategias de criação de produtos de forma estratégica, venda, formas de monetização, e registro de patente.
 
 \end{document}
 
